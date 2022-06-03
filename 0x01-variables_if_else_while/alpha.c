@@ -1,10 +1,14 @@
 #include <stdio.h>
 #include <ctype.h>
 int main() {
-    int i;
+    char i;
+    char digit;
     for (i = 0; i < 10 ; i++)
-    
-        printf("%d", i);
+    {
+        digit = i + '0';
+        putchar(digit);
+
+    }
     
         
     // for (c = 'a'; c <= 'z'; ++c)
