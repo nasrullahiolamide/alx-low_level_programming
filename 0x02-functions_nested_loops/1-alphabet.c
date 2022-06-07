@@ -5,15 +5,10 @@
  * Return:  0 (sucess)
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	void print_alphabet(void);
-	{
-		char c;
-
-        	for (c = 'a'; c <= 'z'; c++)
-                	_putchar(c);
-		}
+	char a;
+        for (a = 'a'; a <= 'z'; a++)
+                _putchar(a);
 	_putchar('\n');
-	return(0);
 }
