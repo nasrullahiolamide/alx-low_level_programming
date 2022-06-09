@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * jack_bauer - print every minutes of the day
+ * Return: null
+ */
+
 void jack_bauer(void)
 {
 	int hrs = 0;
