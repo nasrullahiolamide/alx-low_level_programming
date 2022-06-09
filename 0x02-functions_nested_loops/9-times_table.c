@@ -20,12 +20,14 @@ void times_table(void)
 			{
 				_putchar(' ');
 				_putchar(num + '0');
+				_putchar(',');
 				_putchar(' ');
 			}
 			else
 			{
 				_putchar((num / 10) + '0');
 				_putchar((num % 10) + '0');
+				_putchar(',');
 				_putchar(' ');
 			}
 		}
