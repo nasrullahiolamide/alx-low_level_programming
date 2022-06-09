@@ -70,4 +70,12 @@ void jack_bauer(void);
  */
 void times_table(void);
 
+/**
+ * add - add two numbers
+ * @n1 : number to check
+ * @n2 : number to check
+ * Return: return the sum of two numbers
+ */
+int add(int n1, int n2);
+
 #endif
