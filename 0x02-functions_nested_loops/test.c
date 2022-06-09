@@ -1,0 +1,36 @@
+#include "main.h"
+
+void times_table(void);
+
+int main(void)
+{
+        times_table();
+        return (0);
+}
+
+
+void times_table (void)
+{
+        int r; 
+        int c; 
+        int num;
+        for (r=0; r <= 9; r++)
+        {
+                for (c=0; c <=9; c++)
+                {
+                      num = r * c;
+                        if (num <= 9){
+                              _putchar(' ');
+                              _putchar(num + '0');
+                              _putchar(' ');
+                        } else
+                        {
+                                _putchar((num/10) + '0');
+                                _putchar((num%10) + '0');
+                                _putchar(' ');
+                        }
+                }
+
+                _putchar('\n');
+        }
+}

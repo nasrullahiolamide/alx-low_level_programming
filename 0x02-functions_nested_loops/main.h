@@ -57,5 +57,17 @@ int _abs(int n);
  */
 int print_last_digit(int num);
 
+/**
+ * jack_bauer - print every minutes of the day
+ * Return: null
+ */
+void jack_bauer(void);
+
+
+/**
+ * times_table - print the n times table
+ * Return: null
+ */
+void times_table(void);
 
 #endif
