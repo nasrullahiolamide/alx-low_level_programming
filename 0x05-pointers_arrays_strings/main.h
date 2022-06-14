@@ -53,4 +53,11 @@ void print_rev(char *s);
  */
 void rev_string(char *s);
 
+/** 
+ * put2 - print every other character of a string
+ * @str: string to read
+ * Return : null
+ */
+void puts2(char *str);
+
 #endif /* MAIN_H */
