@@ -60,4 +60,11 @@ void rev_string(char *s);
  */
 void puts2(char *str);
 
+/**
+ * puts_half - prints half of a string, followed by a new line
+ * @str : string to read
+ * Return : null
+ */
+void puts_half(char *str);
+
 #endif /* MAIN_H */
