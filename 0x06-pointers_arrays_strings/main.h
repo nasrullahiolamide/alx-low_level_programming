@@ -9,14 +9,13 @@
 int _putchar(char c);
 
 /**
- * _memset - fill n bytes of memory with a constant value
- * @s: pointer to memory area
- * @b: constant value
- * @n: number of bytes to fill
- * Return: memory area
+ * _strcat - concatenate two strings
+ * @dest: string to be appended to
+ * @src: string to append
+ * Return: concatenated string
  */
 
-char *_memset(char *s, char b, unsigned int n);
+char *_strcat(char *dest, char *src);
 
 
 #endif /* MAIN_H */
