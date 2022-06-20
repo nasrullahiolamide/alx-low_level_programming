@@ -10,7 +10,7 @@ int _putchar(char c);
 
 /**
  * _memset - fills memory with a constant byte
- * 
+ *
  * @s: pointer to memory area to fill
  * @b: byte to fill memory area with
  * @n: number of bytes to fill
