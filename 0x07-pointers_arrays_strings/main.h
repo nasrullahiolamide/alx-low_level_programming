@@ -4,6 +4,7 @@
 /**
  * _putchar - puts character to standard output
  * @c: character to put to standard output
+ * Return: character to standard output
  */
 
 int _putchar(char c);
@@ -26,6 +27,16 @@ char *_memset(char *s, char b, unsigned int n);
  * Return: Character
  */
 char *_memcpy(char *dest, char *src, unsigned int n);
+
+/**
+ * _strchr - locates a character in a string
+ * @s: string to search
+ * @c: character to search for
+ * Return: pointer to character or NULL
+ */
+char *_strchr(char *s, char c);
+
+
 
 
 
