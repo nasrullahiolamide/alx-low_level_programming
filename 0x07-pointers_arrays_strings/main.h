@@ -42,7 +42,7 @@ char *_strchr(char *s, char c);
  * @accept: target matches
  * Return: number of bytes consecutively matched
  */
-char *_strspn(char *s, char *accept);
+unsigned int _strspn(char *s, char *accept);
 
 
 
