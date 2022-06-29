@@ -8,57 +8,41 @@
  * @s2: string 2
  * Return: pointer to concatenated string
  */
-
 char *str_concat(char *s1, char *s2)
 {
 	char *concat_str;
-
-	int i, j=0;
+	int i, j = 0;
 	static int len1, len2;
-
 
 	if (s1 == NULL)  /* Check for NULL */
 	{
-		s1 = "";
+		s1 = '\0';
 	}
-		
 	if (s2 == NULL)
 	{
-		s2 = "";
+		s2 = '\0';
 	}
-
-	/* Check for length of str */
-	for(i = 0; s1[i] != '\0'; i++)
+	for (i = 0; s1[i] != '\0'; i++) /* Check for length of str */
 	{
 		len1++;
 	}
-
-	for(i = 0; s2[i] != '\0'; i++)
+	for (i = 0; s2[i] != '\0'; i++)
 	{
 		len2++;
 	}
-
-	/* allocate memory */
-	concat_str = malloc(sizeof(char) * (len1 + len2 + 1));
-
-	/* check memory */
+	concat_str = malloc(sizeof(char) * (len1 + len2 + 1)); /* allocate memory */
 	if (concat_str == NULL)
 	{
 		return (NULL);
 	}
-
-	/* concate string */
-
-	for(i = 0; i <= len1; i++)
+	for (i = 0; i <= len1; i++)
 	{
-		*(concat_str + i) = *(s1 + i); 
+		*(concat_str + i) = *(s1 + i);
 	}
-
-	for(i= len1; i <= (len1 + len2); i++)
+	for (i = len1; i <= (len1 + len2); i++)
 	{
 		*(concat_str + i) = *(s2 + j);
 		j++;
 	}
-
 	return (concat_str);
 }
