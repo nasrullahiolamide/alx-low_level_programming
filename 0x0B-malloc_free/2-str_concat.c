@@ -26,12 +26,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		len1++;
 	}
-	printf("len1:%d \n", len1);
 	for (i = 0; *(s2 + i); i++)
 	{
 		len2++;
 	}
-	printf("len2%d \n", len2);
 	concat_str = malloc(sizeof(char) * (len1 + len2 + 1)); /* allocate memory */
 	if (concat_str == NULL)
 	{
