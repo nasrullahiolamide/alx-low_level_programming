@@ -22,12 +22,12 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	for (i = 0; s1[i] != '\0'; i++) /* Check for length of str */
+	for (i = 0; *(s1 + i); i++) /* Check for length of str */
 	{
 		len1++;
 	}
 	printf("len1:%d \n", len1);
-	for (i = 0; s2[i] != '\0'; i++)
+	for (i = 0; *(s2 + i); i++)
 	{
 		len2++;
 	}
