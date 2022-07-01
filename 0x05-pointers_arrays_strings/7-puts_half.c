@@ -1,44 +1,24 @@
 #include "main.h"
-
+#include<string.h>
 /**
- * _strlen - returns the length of a string
- * @s: string
- * Return: length
- */
-
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (*s != '\0')
-	{
-		len++;
-		s++;
-	}
-
-	return (len);
-}
-
-/**
- * puts_half - prints half of a string, followed by a new line
- * @str: string to print
- */
-
+* puts_half - printing half of a string
+* @str: the string parameter
+* Return: Always 0 (Success)
+*/
 void puts_half(char *str)
 {
-	int idx;
-	int len = _strlen(str);
-
-	/* find the index to start depending on even/odd amount of strlen */
-	if (len % 2 != 0)
-		idx = (len / 2) + 1;
-	else
-		idx = (len / 2);
-
-	while (idx < len)
-	{
-		_putchar(*(str + idx));
-		idx++;
-	}
-	_putchar('\n');
+int count = 0, i;
+while (count >= 0)
+{
+if (str[count] == '\0')
+break;
+count++;
+}
+if (count % 2 == 1)
+i = count / 2;
+else
+i = (count - 1) / 2;
+for (i++; i < count; i++)
+_putchar(str[i]);
+_putchar('\n');
 }
