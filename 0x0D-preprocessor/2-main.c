@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define C_FILENAME __FILE__
 
 /**
  * main - program to print file name
@@ -8,6 +9,6 @@
 
 int main(void)
 {
-	printf("%s \n", __FILE__);
+	printf("%s \n", C_FILENAME);
 	return (0);
 }
