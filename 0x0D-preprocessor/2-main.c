@@ -1,14 +1,13 @@
 #include <stdio.h>
-#define C_FILENAME __FILE__
 
 /**
- * main - program to print file name
- * Return: int
+ * main - program to print file name with macro
+ * Return: 0 on success
  */
 
 
 int main(void)
 {
-	printf("%s \n", C_FILENAME);
+	printf("%s\n", __FILE__);
 	return (0);
 }
