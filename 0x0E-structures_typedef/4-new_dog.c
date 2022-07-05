@@ -2,6 +2,14 @@
 #include <stdlib.h>
 #include "dog.h"
 
+/**
+ * new_dog - create new instance of struct dog
+ * @name: member
+ * @age: member
+ * @owner: member
+ * Return: initialized instance of struct dog
+ */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	int i, length_of_name, length_of_owner;
