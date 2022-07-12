@@ -1,5 +1,12 @@
-#include <stdarg.h> 
+#include <stdarg.h>
 #include "variadic_functions.h"
+
+/**
+ * sum_them_all - Sum an infinty number of argument
+ * @n: number of expected arguemnts
+ * @...: numbers to sum
+ * Return: sum of numbers
+ */
 
 int sum_them_all(const unsigned int n, ...)
 {
