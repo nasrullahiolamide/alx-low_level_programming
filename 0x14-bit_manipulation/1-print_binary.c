@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_binary - print binary equivalent of an int
+ * @n: number to be converted
+ * Return: void.
  */
 
 void print_binary(unsigned long int n)
 {
-        if(n > 1)
-        {
-                print_binary(n >> 1);
-        }
+	if (n > 1)
+	{
+		print_binary(n >> 1);
+	}
 
-        _putchar('0' + (n & 1));
+	_putchar('0' + (n & 1));
 }
