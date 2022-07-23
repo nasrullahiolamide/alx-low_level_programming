@@ -17,7 +17,6 @@ int get_bit(unsigned long int n, unsigned int index)
 	if (index > max_bits)
 		return (-1);
 
-	
 	/* left shift by number of index and bitwise AND to get last bit */
 	ind_bit = ((n >> index) & 1);
 
